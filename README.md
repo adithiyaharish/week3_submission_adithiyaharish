@@ -24,3 +24,5 @@ Python node files for question 4:
 q4_clock.py
 
 q4_clock.py uses the std_msgs package to print the time in HH:MM:SS format published on the /clock topic
+
+<img width="806" alt="Screenshot 2025-07-07 at 11 12 51 PM" src="https://github.com/user-attachments/assets/ac4ad44f-ae28-4bdc-b9c5-fa6347dbe878" />
