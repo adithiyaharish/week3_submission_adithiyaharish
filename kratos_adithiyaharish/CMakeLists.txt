@@ -10,9 +10,17 @@ find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(ament_cmake_python REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 
 
 ament_python_install_package(${PROJECT_NAME})
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/RoverStatus.msg"
+  DEPENDENCIES geometry_msgs builtin_interfaces
+)
+	
 
 install(PROGRAMS
   scripts/q1_publisher_node.py
